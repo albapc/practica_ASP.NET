@@ -31,7 +31,6 @@ namespace ASP_Prueba
             using (SqlConnection con = new SqlConnection(conexion))
             {
                 con.Open();
-                // replace with your query
                 using (SqlCommand cmd = new SqlCommand("SELECT ID, nombre, usuario, email, direccion, ciudad FROM SalesLT.Usuarios", con))
                 {
                     dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
